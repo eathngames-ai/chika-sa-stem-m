@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHIKA SA STEM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('bg.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(255,105,180,0.8);
+      animation: fadeIn 2s ease-in;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .students {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 2rem;
+    }
+
+    .student-card {
+      background-color: rgba(245, 245, 220, 0.8);
+      border-radius: 10px;
+      width: 260px;
+      text-align: center;
+      padding: 1.2rem;
+      transition: transform 0.3s;
+      animation: fadeInUp 1.5s ease-in;
+      box-shadow: 5px 10px 15px rgba(0,0,0,0.5);
+    }
+
+    .student-card:hover {
+      transform: scale(1.05);
+      background-color: rgba(245, 245, 220, 1);
+    }
+
+    .student-card img {
+      width: 230px;
+      height: 230px;
+      border-radius: 5px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+      border: 8px solid #fff;
+      background-color: #fff;
+      box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+    }
+
+    .student-card h3 {
+      margin: 0.3rem 0 0;
+      color: #FF69B4;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ------------------------------------------------------ */
+    /* 📱📱 MOBILE RESPONSIVE DESIGN BELOW (IMPORTANT!)       */
+    /* ------------------------------------------------------ */
+
+    @media (max-width: 768px) {
+      header {
+        padding: 1.5rem;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .students {
+        padding: 1rem;
+        gap: 15px;
+      }
+
+      .student-card {
+        width: 90%;           /* full width on mobile */
+        padding: 1rem;
+      }
+
+      .student-card img {
+        width: 100%;          /* responsive image */
+        height: auto;
+      }
+
+      .student-card h3 {
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Extra small phones */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.7rem;
+      }
+      header p {
+        font-size: 0.9rem;
+      }
+      .student-card h3 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>CHIKA SA STEM</h1>
+    <p>SCHOOL YEAR 2024-2026</p>
+  </header>
+
+  <section class="students">
+    <!-- Boys -->
+    <div class="student-card"><img src="anzon.jpeg"><h3>ANZON BAGAOISAN</h3></div>
+    <div class="student-card"><img src="ishmael.jpeg"><h3>ISHMAEL INTONG</h3></div>
+    <div class="student-card"><img src="vj.jpeg"><h3>VJ LEGASPO</h3></div>
+    <div class="student-card"><img src="chris.jpeg"><h3>CHRIS MANGUILIMOTAN</h3></div>
+    <div class="student-card"><img src="eathn.jpeg"><h3>EATHN MINOC</h3></div>
+    <div class="student-card"><img src="codie.jpeg"><h3>CODIE PLAZA</h3></div>
+
+    <!-- Girls -->
+    <div class="student-card"><img src="hershey.jpeg"><h3>HERSHEY ADARLO</h3></div>
+    <div class="student-card"><img src="angel.jpeg"><h3>ANGEL BUTCON</h3></div>
+    <div class="student-card"><img src="clarizel.jpeg"><h3>CLARIZEL CALIMPONG</h3></div>
+    <div class="student-card"><img src="julia.jpeg"><h3>JULIA GARAY</h3></div>
+    <div class="student-card"><img src="jayanne.jpeg"><h3>JAYANNE PAYAO</h3></div>
+    <div class="student-card"><img src="trisha.jpeg"><h3>TRISHA JOSOL</h3></div>
+    <div class="student-card"><img src="kathleen.jpeg"><h3>KATHLEEN LUMANAO</h3></div>
+    <div class="student-card"><img src="cristine.jpeg"><h3>CRISTINE PEDOLINE</h3></div>
+    <div class="student-card"><img src="daisy.jpeg"><h3>DAISY RULIDA</h3></div>
+    <div class="student-card"><img src="charmella.jpeg"><h3>CHARMELLA RIVERA</h3></div>
+    <div class="student-card"><img src="missy.jpeg"><h3>MISSY ROLUNA</h3></div>
+    <div class="student-card"><img src="sherl.jpeg"><h3>SHERL AN ROLUNA</h3></div>
+    <div class="student-card"><img src="lyean.jpeg"><h3>LYEAN SALIBAY</h3></div>
+    <div class="student-card"><img src="janelle.jpeg"><h3>JANELLE CATINDIN</h3></div>
+  </section>
+</body>
+</html>
